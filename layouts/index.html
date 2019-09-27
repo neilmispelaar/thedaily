@@ -1,0 +1,102 @@
+{{ define "main" }}
+
+    <main property="mainContentOfPage" class="container">
+
+            <h1 property="name" id="wb-cont">Smart Daily Redesign</h1>
+    
+            <p><strong>From <a href="https://www.statcan.gc.ca/eng/start">[Statistics Canada]</a></strong></p>
+        
+            <section>
+                <h2>Roadmap</h2>
+        
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-sm-2" scope="col">Feature</th>
+                            <th class="col-sm-4" scope="col">Description</th>
+                            <th class="col-sm-2" scope="col">Last Update</th>
+                            <th class="col-sm-2" scope="col">Build Status</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        
+                            {{ range sort (where .Site.Pages "Params.featureconfig" "!=" nil) ".Params.featureconfig.title" }}
+            
+                                <tr>
+                                    <td><a href="{{ .Permalink }}">{{ .Params.featureconfig.title }}</a></td>
+                                    <td>{{ .Params.featureconfig.description }}</td>
+                                    <td>{{ .Lastmod.Format "January 2, 2006" }}</td>
+                                    <td>
+                                        {{ if eq .Params.featureconfig.status "Not yet started" }}
+                                            <span class="label label-danger">Not yet started</span>
+                                        {{ else if eq .Params.featureconfig.status "Build (in progress)" }}
+                                            <span class="label label-primary">Build (in progress)</span>
+                                        {{ else if eq .Params.featureconfig.status "Build (complete)" }}
+                                            <span class="label label-success">Build (complete)</span>
+                                        {{ else if eq .Params.featureconfig.status "On hold" }}
+                                            <span class="label label-warning">On hold</span>
+                                        {{ else }}
+                                        <span class="label label-default">{{ .Params.featureconfig.status }}</span>
+                                        {{ end }}
+                                    </td>
+                                </tr>
+                        
+                            {{ end }}
+            
+                        </tbody>
+                    </table>
+                </div>
+
+                <section>
+                    
+                    <h3>Status Descriptions</h3>
+            
+                    <dl class="row">
+                        <dt class="col-sm-3">
+                            <span class="label label-danger">Not yet started</span>
+                        </dt>
+                        <dd class="col-sm-9">
+                            <p>No build work has commenced for this template.</p>
+                        </dd>
+
+                        <dt class="col-sm-3">
+                            <span class="label label-warning">On hold</span>
+                        </dt>
+                        <dd class="col-sm-9">
+                            <p>Build work previously started, but for some reason has stopped.</p>
+                        </dd>
+                    
+                        <dt class="col-sm-3">
+                            <span class="label label-primary">Build (in progress)</span>
+                        </dt>
+                        <dd class="col-sm-9">
+                            <p>Building the template has started.</p>
+                        </dd>
+
+                        <dt class="col-sm-3">
+                            <span class="label label-success">Build (complete)</span>
+                        </dt>
+                        <dd class="col-sm-9">
+                            <p>Building the template has been completed.</p>
+                        </dd>
+                    
+                    </dl>
+            
+                </section>
+        
+            </section>
+
+            <section>
+                <h2>Project Description</h2>
+        
+                <p>To Do</p>
+        
+            </section>
+        
+
+        {{- partial "site/mainfooter.html" . -}}
+
+    </main>
+
+{{ end }}

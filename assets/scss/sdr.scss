@@ -1,0 +1,18 @@
+/* 
+    STATCAN DAILY
+    @title: StatCan Daily Project Main SCSS File  
+
+*/
+
+// Scope Class 
+.statcan-sdr { 
+
+    @import "globals";
+    @import "mixins";
+
+    @import "base";
+    
+    @import "navigation";
+    @import "indicators"; 
+
+}

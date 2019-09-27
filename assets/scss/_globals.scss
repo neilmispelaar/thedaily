@@ -1,0 +1,29 @@
+/* 
+    STATCAN DAILY
+    @title: Global Variables for the project
+
+*/
+
+
+// Bootstrap 3.37 Breakpoints (not modified)
+// Small devices (landscape phones, 576px and up)
+$break-sm: 576px;
+// Medium devices (tablets, 768px and up)
+$break-md: 768px;
+// Large devices (desktops, 992px and up)
+$break-lg: 992px;
+// Extra large devices (large desktops, 1200px and up)
+$break-xl: 1200px;
+
+/* 
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+//@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+//@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+//@media (min-width: @screen-lg-min) { ... }

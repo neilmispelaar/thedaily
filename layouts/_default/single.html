@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+    <main property="mainContentOfPage" class="container">
+
+        {{ .Content }}
+
+        {{- partial "site/mainfooter.html" . -}}
+
+    </main>
+
+{{ end }}
