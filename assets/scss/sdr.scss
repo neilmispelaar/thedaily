@@ -7,13 +7,18 @@
 // Scope Class
 .statcan-sdr {
 
-    @import "shared/globals";
-    @import "shared/mixins";
-    @import "shared/base";
+	// Utilities
+    @import "utilities/globals";
+    @import "utilities/mixins";
+    @import "utilities/base";
 
-	@import "shared/navigation";
+	// Layout
+	@import "layout/navigation";
 
-	@import "home/indicators";
-	@import "home/articles";
+	// Components
+	@import "components/indicators";
+
+	// Page specific styles
+	@import "pages/home";
 
 }
