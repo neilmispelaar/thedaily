@@ -39,7 +39,7 @@ ul.article-cards-style-a {
 
 			.article-card-title {
 
-				font-size: 2.5rem;
+				font-size: 3rem;
 				font-weight: bolder;
 
 				a {
@@ -88,15 +88,14 @@ ul.article-cards-style-a {
 					padding: 0px 15px 0px 15px;
 					margin: 0px;
 
-
+					font-weight: lighter;
 					font-size: 1.5rem;
 
+					box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 				}
 
 
 			}
-
-			
 
 			.article-card-content {
 				//background-color: #888;
@@ -116,8 +115,8 @@ ul.article-cards-style-a {
 
 				.article-card-text {
 
-					font-size: 1.8rem;
-					line-height: 3rem;
+					font-size: 1.6rem;
+					line-height: 2.9rem;
 
 				}
 
