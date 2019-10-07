@@ -4,6 +4,12 @@
 
 */
 
+// Starting colour for the gradient
+$indicator-gradient-start: rgb(233, 233, 233);
+$indicator-gradient-end: rgb(177, 177, 177);
+
+
+
 .indicators {
 	//background-color: black;
 	margin: 30px 0px 20px 0px;
@@ -46,15 +52,26 @@
 
 			li {
 
-				margin: 50px;
-				padding: 50px;
-				background-color: white;
-				border: 1px solid rgb(180, 180, 180);
+				margin: 20px;
+
+
+				.indicator-card {
+
+					padding: 5px;
+
+					background-color: white;
+					border: 1px solid rgb(180, 180, 180);
+
+					background: #FFEFBA;  /* fallback for old browsers */
+					background: -webkit-linear-gradient(to left,$indicator-gradient-start, $indicator-gradient-end);  /* Chrome 10-25, Safari 5.1-6 */
+					background: linear-gradient(to left, $indicator-gradient-start, $indicator-gradient-end); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+				}
+
 
 				&:last-child {
 
-					background-color: blue;
-					margin-right: 50px;
+					margin-right: 40px;
 
 				}
 
@@ -64,11 +81,43 @@
 
 	}
 
+	// Medium and larger
+	@media (min-width: $break-md) {
+
+		.x-scrollable-container {
+
+			background-color: #000;
+
+			margin-left: 0px;
+			margin-right: 0px;
+
+			display: flex;
+			flex-wrap: wrap;
+
+			overflow-x: scroll;
 
 
+			ul.indicators-list {
 
+				display: flex;
+				flex-wrap: wrap;
 
+				li {
 
+					&:last-child {
+
+						background-color: #fff;
+						margin-right: 0px;
+
+					}
+
+				}
+			}
+
+		}
+
+	}
 
 }
+
 
