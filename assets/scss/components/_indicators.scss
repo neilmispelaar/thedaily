@@ -20,13 +20,15 @@ $indicator-gradient-end: rgb(177, 177, 177);
 
 	.x-scrollable-container {
 
+		background-color: #FFEFBA; 
+
 		margin-left: -15px;
 		margin-right: -15px;
 
 		display: flex;
 		flex-wrap: nowrap;
 		overflow-x: auto;
-		width: 100%;
+		width: auto;
 
 		// Start code that hides scroll bar
 		// https://forum.ionicframework.com/t/hide-scrollbar-but-still-be-able-to-scroll/107146
@@ -85,6 +87,12 @@ $indicator-gradient-end: rgb(177, 177, 177);
 
 
 					}
+
+				}
+
+				&:first-child {
+
+					margin-left: 5px;
 
 				}
 
