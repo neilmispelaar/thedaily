@@ -13,6 +13,9 @@ $card-background-color: #f8f8f8;
 $img-border-radius: 10px;
 $category-text-color: #575757;
 
+$new-badge-bg-color: #114a80;
+$new-badge-text-color: #fff;
+
 
 
 ul.article-cards-style-a {
@@ -51,31 +54,49 @@ ul.article-cards-style-a {
 
 			}
 
-			.article-card-category {
 
+			.article-card-information { 
 				order: -1;
-				font-size: 1.5rem;
-				color: $category-text-color;
-				font-weight: bold;
-				padding: 0px;
-				margin: 0px;
-
-				display: flex;
+				display: flex; 
 				flex-direction: row;
 				justify-content: space-between;
 
-				// Remove padding from the paragraph if it's there
-				p {
+
+				.article-card-category {
+
+					font-size: 1.5rem;
+					color: $category-text-color;
+					font-weight: bold;
 					padding: 0px;
 					margin: 0px;
+	
+					display: flex;
+					flex-direction: row;
+						
+					a {
+						color: inherit;
+						text-decoration: none;
+					}
+	
 				}
 
-				a {
-					color: inherit;
-					text-decoration: none;
+				.article-card-new {
+
+					background-color: $new-badge-bg-color; 
+					color: $new-badge-text-color; 
+					border-radius: 5px;
+					padding: 0px 15px 0px 15px;
+					margin: 0px;
+
+
+					font-size: 1.5rem;
+
 				}
+
 
 			}
+
+			
 
 			.article-card-content {
 				//background-color: #888;
