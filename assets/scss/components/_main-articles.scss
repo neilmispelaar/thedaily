@@ -6,7 +6,7 @@
 
 
 // Variables
-$card-border-color: rgb(160, 160, 160);
+$card-border-color: #cccccc;
 $card-border-radius: 10px;
 $card-padding: 10px 15px 15px 15px;
 $card-background-color: #f8f8f8;
@@ -21,7 +21,7 @@ $new-badge-text-color: #fff;
 ul.article-cards-style-a {
 
 	list-style: none;
-	margin: 0px;
+	margin: 20px 0px 0px 0px;
 	padding: 0px;
 
 	//background-color: black;
@@ -33,13 +33,15 @@ ul.article-cards-style-a {
 			border: 1px solid $card-border-color;
 			border-radius: $card-border-radius;
 			padding: $card-padding;
+			margin-top: 20px;
 
 			display: flex;
 			flex-direction: column;
 
 			.article-card-title {
 
-				font-size: 3rem;
+				margin-top: 10px;
+				font-size: 2.5rem;
 				font-weight: bolder;
 
 				a {
@@ -106,7 +108,7 @@ ul.article-cards-style-a {
 
 					img {
 						width: 100%;
-						height: 150px;
+						height: 200px;
 						//object-fit: cover;
 						object-fit: cover;
 						border-radius: $img-border-radius;

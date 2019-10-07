@@ -3,3 +3,12 @@
     @title: Base styles for headings and links and things
 
 */
+
+$thedaily-primary-color: #f5a623;
+
+h2 { 
+    
+    padding-bottom: 5px;
+    border-bottom: 2px solid $thedaily-primary-color;
+
+}
