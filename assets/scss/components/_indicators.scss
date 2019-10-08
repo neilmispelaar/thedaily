@@ -11,16 +11,43 @@ $indicator-gradient-end: rgb(177, 177, 177);
 
 
 .indicators {
-	
+
 	margin: 30px 0px 20px 0px;
 
 	h2 {
 		@include accessible-invisible;
 	}
 
+	ul.indicators-list-a {
+
+		border: 1px solid red;
+
+		//background-color: black;
+		color: black;
+
+		list-style: none;
+		margin: 20px 0px 20px 0px;
+		padding: 0px;
+
+		display: flex;
+  		flex-wrap: nowrap;
+		overflow: auto;
+
+		li {
+
+			border: 1px solid blue;
+			padding: 25px;
+
+			//flex: 0 0 auto;
+			color: black;
+		}
+
+	}
+
+
 	.x-scrollable-container {
 
-		background-color: #FFEFBA; 
+		background-color: #FFEFBA;
 
 		margin-left: -15px;
 		margin-right: -15px;
@@ -58,7 +85,7 @@ $indicator-gradient-end: rgb(177, 177, 177);
 
 					padding: 5px;
 
-					// Adding a width to this card causes a problem with iOS 
+					// Adding a width to this card causes a problem with iOS
 					//width: 200px;
 
 					background-color: white;
@@ -73,16 +100,16 @@ $indicator-gradient-end: rgb(177, 177, 177);
 
 					margin: 0px 10px 0px 10px;
 
-					h3 { 
+					h3 {
 						white-space: nowrap;
 						padding-right: 50px;
 					}
 
-					dl { 
+					dl {
 						display: flex;
 						flex-direction: column;
 
-						dt { 
+						dt {
 							@include accessible-invisible;
 						}
 
