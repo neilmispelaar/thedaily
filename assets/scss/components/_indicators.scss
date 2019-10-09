@@ -46,11 +46,11 @@ $indicator-card-border-radius: 10px;
 
 		li {
 
-			//flex-grow: 1;
-			//flex-shrink: 0;
-			//flex-basis: max-content;
+			flex-grow: 1;
+			flex-shrink: 0;
+			flex-basis: auto;
 
-			padding: 00px 0px 0px 0px;
+			padding: 0px 0px 0px 0px;
 			margin: 0px 0px 0px 20px;
 
 
@@ -148,7 +148,7 @@ $indicator-card-border-radius: 10px;
 	}
 
 	// Medium and larger
-	@media (min-width: $break-md) {	
+	@media (min-width: $break-md) {
 
 	}
 
