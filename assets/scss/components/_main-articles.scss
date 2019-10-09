@@ -18,7 +18,7 @@ $new-badge-text-color: #fff;
 
 
 
-ul.article-cards-style-a {
+ul.article-cards-style-main {
 
 	list-style: none;
 	margin: 20px 0px 0px 0px;
@@ -57,9 +57,9 @@ ul.article-cards-style-a {
 			}
 
 
-			.article-card-information { 
+			.article-card-information {
 				order: -1;
-				display: flex; 
+				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
 
@@ -71,21 +71,21 @@ ul.article-cards-style-a {
 					font-weight: bold;
 					padding: 0px;
 					margin: 0px;
-	
+
 					display: flex;
 					flex-direction: row;
-						
+
 					a {
 						color: inherit;
 						text-decoration: none;
 					}
-	
+
 				}
 
 				.article-card-new {
 
-					background-color: $new-badge-bg-color; 
-					color: $new-badge-text-color; 
+					background-color: $new-badge-bg-color;
+					color: $new-badge-text-color;
 					border-radius: 5px;
 					padding: 0px 15px 0px 15px;
 					margin: 0px;
@@ -126,6 +126,207 @@ ul.article-cards-style-a {
 
 			}
 
+
+		}
+
+	}
+
+}
+
+ul.article-cards-style-sub {
+
+	list-style: none;
+	margin: 20px 0px 0px 0px;
+	padding: 0px;
+
+	//background-color: black;
+
+	li {
+
+		.article-card {
+
+			// border: 1px solid $card-border-color;
+			// border-radius: $card-border-radius;
+			// padding: $card-padding;
+
+			border-bottom: 1px solid gray;
+
+			margin-top: 20px;
+
+			display: flex;
+			flex-direction: column;
+
+			.article-card-title {
+
+				margin: 0px 0px 5px 0px;
+				font-size: 2.0rem;
+				font-weight: bolder;
+
+				a {
+					text-decoration: none !important;
+				}
+
+				h2,h3,h4,h5,h6 {
+					margin: 0px;
+					padding: 0px;
+					font-size: inherit;
+				}
+
+			}
+
+
+			.article-card-information {
+				order: -1;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+
+
+				.article-card-category {
+
+					font-size: 1.5rem;
+					color: $category-text-color;
+					font-weight: bold;
+					padding: 0px;
+					margin: 0px;
+
+					display: flex;
+					flex-direction: row;
+
+					a {
+						color: inherit;
+						text-decoration: none;
+					}
+
+				}
+
+				.article-card-new {
+
+					display: none;
+
+					/*
+					background-color: $new-badge-bg-color;
+					color: $new-badge-text-color;
+					border-radius: 5px;
+					padding: 0px 15px 0px 15px;
+					margin: 0px;
+
+					font-weight: lighter;
+					font-size: 1.5rem;
+
+					box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+					*/
+				}
+
+
+			}
+
+			.article-card-content {
+				//background-color: #888;
+
+				.article-card-image {
+
+					//@include accessible-invisible;
+					display: none;
+					//margin: 10px 0px 10px 0px;
+
+					/*
+					img {
+						width: 100%;
+						height: 200px;
+						//object-fit: cover;
+						object-fit: cover;
+						border-radius: $img-border-radius;
+
+						box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+					}
+					*/
+				}
+
+				.article-card-text {
+
+					font-size: 1.6rem;
+					line-height: 2.9rem;
+
+				}
+
+			}
+
+
+		}
+
+	}
+
+	// Medium and larger
+	@media (min-width: $break-lg) {
+
+
+		li {
+
+			.article-card {
+
+				border: 1px solid $card-border-color;
+				border-radius: $card-border-radius;
+				padding: $card-padding;
+
+				.article-card-title {
+
+					margin: 10px 0px 0px 0px;
+					font-size: 2.5rem;
+
+				}
+
+				.article-card-information {
+
+					.article-card-new {
+
+						display: block;
+
+						background-color: $new-badge-bg-color;
+						color: $new-badge-text-color;
+						border-radius: 5px;
+						padding: 0px 15px 0px 15px;
+						margin: 0px;
+
+						font-weight: lighter;
+						font-size: 1.5rem;
+
+						box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+					}
+
+				}
+
+				.article-card-content {
+					//background-color: #888;
+
+					.article-card-image {
+
+						display: block;
+
+						margin: 10px 0px 10px 0px;
+
+						img {
+							width: 100%;
+							height: 200px;
+							//object-fit: cover;
+							object-fit: cover;
+							border-radius: $img-border-radius;
+
+							box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+						}
+					}
+
+					.article-card-text {
+
+						font-size: 1.6rem;
+						line-height: 2.9rem;
+
+					}
+
+				}
+
+
+			}
 
 		}
 

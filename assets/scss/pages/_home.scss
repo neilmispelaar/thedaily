@@ -1,0 +1,49 @@
+/*
+    STATCAN DAILY
+    @title: Home page styles
+
+*/
+
+.sub-content-container {
+
+	display: flex;
+	flex-direction: column;
+
+	.sub-articles-container {
+
+		order: 1;
+
+		h2 {
+			@include accessible-invisible;
+		}
+
+	}
+
+	.you-may-also-like-container {
+
+		order: 2;
+
+	}
+
+	// Medium and larger
+	@media (min-width: $break-lg) {
+
+		.sub-articles-container {
+
+			order: 2;
+
+		}
+
+		.you-may-also-like-container {
+
+			order: 1;
+
+		}
+
+
+	}
+
+
+}
+
+
