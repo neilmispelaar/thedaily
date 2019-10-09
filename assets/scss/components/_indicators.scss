@@ -20,7 +20,7 @@ $indicator-card-border-radius: 10px;
 	//	@include accessible-invisible;
 	//}
 
-	ul.indicators-list-a {
+	ul.indicators-list {
 
 		list-style: none;
 		margin: 20px -15px 20px -15px;
@@ -147,118 +147,8 @@ $indicator-card-border-radius: 10px;
 
 	}
 
-
-	.x-scrollable-container {
-
-		background-color: #FFEFBA;
-
-		margin-left: -15px;
-		margin-right: -15px;
-
-		display: flex;
-		flex-wrap: nowrap;
-		overflow-x: auto;
-		width: auto;
-
-		// Start code that hides scroll bar
-		// https://forum.ionicframework.com/t/hide-scrollbar-but-still-be-able-to-scroll/107146
-
-		-webkit-overflow-scrolling: touch;
-		-ms-overflow-style: none;  // IE 10+
-		scrollbar-width: none;  // Firefox
-		scroll-behavior: smooth;
-
-		&::-webkit-scrollbar {
-			display: none; // Safari and Chrome
-		}
-		// End code that hides a scroll bar
-
-		ul.indicators-list {
-
-			display: flex;
-			flex-direction: row;
-
-			list-style: none;
-			margin: 0px;
-			padding: 0px;
-
-			li {
-
-				.indicator-card {
-
-					padding: 5px;
-
-					// Adding a width to this card causes a problem with iOS
-					//width: 200px;
-
-					background-color: white;
-					border: 1px solid rgb(180, 180, 180);
-
-					background: #FFEFBA;  /* fallback for old browsers */
-					background: -webkit-linear-gradient(to left,$indicator-gradient-start, $indicator-gradient-end);  /* Chrome 10-25, Safari 5.1-6 */
-					background: linear-gradient(to left, $indicator-gradient-start, $indicator-gradient-end); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-					display: flex;
-					flex-direction: column;
-
-					margin: 0px 10px 0px 10px;
-
-
-				}
-
-				&:first-child {
-
-					margin-left: 5px;
-
-				}
-
-
-				&:last-child {
-
-					margin-right: 40px;
-
-				}
-
-			}
-
-		}
-
-	}
-
 	// Medium and larger
-	@media (min-width: $break-md) {
-
-		.x-scrollable-container {
-
-			background-color: #000;
-
-			margin-left: 0px;
-			margin-right: 0px;
-
-			display: flex;
-			flex-wrap: wrap;
-
-			overflow-x: scroll;
-
-
-			ul.indicators-list {
-
-				display: flex;
-				flex-wrap: wrap;
-
-				li {
-
-					&:last-child {
-
-						background-color: #fff;
-						margin-right: 0px;
-
-					}
-
-				}
-			}
-
-		}
+	@media (min-width: $break-md) {	
 
 	}
 
