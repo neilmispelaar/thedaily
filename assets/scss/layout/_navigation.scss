@@ -1,135 +1,49 @@
-/* 
+/*
     STATCAN DAILY
-    @title: Navigation Styles 
+    @title: Navigation Styles
 
 */
 
-.navigation { 
-
-    visibility: collapse;
-    border-bottom: 2px solid #dbd820; 
-
-    display: flex;
-    flex-direction: row;
-    
-    /* Hide the navigation header */ 
-    h2 { 
-        @include accessible-invisible; 
-    }
-
-    .navigation-banner { 
-
-
-        // sm only
-        @media screen and (max-width: $break-md) {
-            
-            img { 
-                width: 100% !important;
-            }
-            
-        }
-
-    }
-
-    .navigation-list {
-
-        border-top: 2px solid #dbd820; 
-        width: 100%;
-
-        list-style: none;
-        margin: 20px 0px 0px 0px;
-        
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        align-items: center;
-
-        
-        li { 
-            
-           
-            text-align: center;
-
-            a { 
-                font-size: 0.7em;
-                padding: 1em; 
-                display: block;
-                width: 100%;
-                background-color: #fff;
-                text-decoration: none; 
-                color: #333333;
-                transition: 0.25s ease-in;
-
-                &:hover { 
-                    transition: 0.25s ease-in;
-                    color: #1f1f1f;
-                    text-decoration: underline !important;
-                }
-            }
-
-        }
-
-        // sm only
-        @media screen and (max-width: $break-md) {
-            
-            margin: 0px 0px 0px 0px;
-            flex-direction: column;
-        }
-
-    }
-
-    // sm only
-    @media screen and (max-width: $break-md) {
-
-        flex-direction: column;
-    }
-
-
-}
-
-
-
-.navigation-2 { 
+.navigation {
 
     background-color: #eee;
     margin: 0 auto;
 
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
 
     // Medium devices and up
     @media screen and (min-width: $break-md) {
-            
+
         flex-direction: row;
         background-color: green;
-        
-    }
-    
 
-
-
-    /* Hide the navigation header */ 
-    h2 { 
-        @include accessible-invisible; 
     }
 
-    /* The wrapper around the banner image */ 
-    .navigation-banner { 
+
+
+
+    /* Hide the navigation header */
+    h2 {
+        @include accessible-invisible;
+    }
+
+    /* The wrapper around the banner image */
+    .navigation-banner {
 
         align-self: center;
-        
+
         // sm only
         @media screen and (max-width: $break-md) {
-            
-            img { 
+
+            img {
                 //width: 50% !important;
             }
-            
+
         }
-        
+
 
     }
 
@@ -140,7 +54,7 @@
         margin: 0px;
         padding: 0px;
 
-       
+
 
         background-color: black;
 
@@ -151,21 +65,21 @@
 
         // Medium devices and up
         @media screen and (min-width: $break-md) {
-                
+
             flex-direction: row;
             justify-content: space-around;
             background-color: green;
-            
-        }
-    
 
-        li { 
+        }
+
+
+        li {
 
             padding: 10px;
             text-align: center;
-            
 
-            a { 
+
+            a {
                 display: block;
                 font-size: 0.7em;
             }
