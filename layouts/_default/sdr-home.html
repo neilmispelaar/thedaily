@@ -1,13 +1,13 @@
 {{ define "customstyles" }}
 
-    {{ if (fileExists "assets/scss/sdr.scss") }}   
+    {{ if (fileExists "assets/scss/sdr.scss") }}
 
         {{ $scss := resources.Get "scss/sdr.scss" }}
         {{ $style := $scss | resources.ToCSS }}
-        <link rel="stylesheet" href="{{ $style.Permalink }}">
-        
+        <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
     {{ end }}
-        
+
 
 {{ end }}
 

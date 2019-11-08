@@ -57,9 +57,9 @@ ul.article-cards-style-main {
 			}
 
 
-			.article-card-information { 
+			.article-card-information {
 				order: -1;
-				display: flex; 
+				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
 
@@ -71,21 +71,21 @@ ul.article-cards-style-main {
 					font-weight: bold;
 					padding: 0px;
 					margin: 0px;
-	
+
 					display: flex;
 					flex-direction: row;
-						
+
 					a {
 						color: inherit;
 						text-decoration: none;
 					}
-	
+
 				}
 
 				.article-card-new {
 
-					background-color: $new-badge-bg-color; 
-					color: $new-badge-text-color; 
+					background-color: $new-badge-bg-color;
+					color: $new-badge-text-color;
 					border-radius: 5px;
 					padding: 0px 15px 0px 15px;
 					margin: 0px;
@@ -145,7 +145,12 @@ ul.article-cards-style-sub {
 
 		.article-card {
 
-			padding: 0px;
+			// border: 1px solid $card-border-color;
+			// border-radius: $card-border-radius;
+			// padding: $card-padding;
+
+			border-bottom: 1px solid gray;
+
 			margin-top: 20px;
 
 			display: flex;
@@ -153,8 +158,8 @@ ul.article-cards-style-sub {
 
 			.article-card-title {
 
-				margin-top: 10px;
-				font-size: 2.5rem;
+				margin: 0px 0px 5px 0px;
+				font-size: 2.0rem;
 				font-weight: bolder;
 
 				a {
@@ -170,9 +175,9 @@ ul.article-cards-style-sub {
 			}
 
 
-			.article-card-information { 
+			.article-card-information {
 				order: -1;
-				display: flex; 
+				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
 
@@ -184,24 +189,23 @@ ul.article-cards-style-sub {
 					font-weight: bold;
 					padding: 0px;
 					margin: 0px;
-	
+
 					display: flex;
 					flex-direction: row;
-						
+
 					a {
 						color: inherit;
 						text-decoration: none;
 					}
-	
 				}
 
 				.article-card-new {
 
-					@include accessible-invisible;
+					display: none;
 
 					/*
-					background-color: $new-badge-bg-color; 
-					color: $new-badge-text-color; 
+					background-color: $new-badge-bg-color;
+					color: $new-badge-text-color;
 					border-radius: 5px;
 					padding: 0px 15px 0px 15px;
 					margin: 0px;
@@ -221,11 +225,11 @@ ul.article-cards-style-sub {
 
 				.article-card-image {
 
-					@include accessible-invisible;
+					//@include accessible-invisible;
+					display: none;
+					//margin: 10px 0px 10px 0px;
 
 					/*
-					margin: 10px 0px 10px 0px;
-
 					img {
 						width: 100%;
 						height: 200px;
@@ -253,21 +257,50 @@ ul.article-cards-style-sub {
 	}
 
 	// Medium and larger
-	@media (min-width: $break-lg) {	
-		
-		li { 
+	@media (min-width: $break-lg) {
+
+
+		li {
 
 			.article-card {
 
 				border: 1px solid $card-border-color;
 				border-radius: $card-border-radius;
 				padding: $card-padding;
-				margin-top: 20px;
+
+				.article-card-title {
+
+					margin: 10px 0px 0px 0px;
+					font-size: 2.5rem;
+
+				}
+
+				.article-card-information {
+
+					.article-card-new {
+
+						display: block;
+
+						background-color: $new-badge-bg-color;
+						color: $new-badge-text-color;
+						border-radius: 5px;
+						padding: 0px 15px 0px 15px;
+						margin: 0px;
+
+						font-weight: lighter;
+						font-size: 1.5rem;
+
+						box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+					}
+
+				}
 
 				.article-card-content {
 					//background-color: #888;
 
 					.article-card-image {
+
+						display: block;
 
 						margin: 10px 0px 10px 0px;
 
@@ -290,9 +323,12 @@ ul.article-cards-style-sub {
 					}
 
 				}
+
+
 			}
+
 		}
-        
+
 	}
 
 }

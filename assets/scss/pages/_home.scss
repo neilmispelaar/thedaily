@@ -1,41 +1,49 @@
 /*
     STATCAN DAILY
-    @title: Styles for the home page
+    @title: Home page styles
 
 */
 
-// Container to manage the layout of the "You may also like" and "Sub Article" sections
+.sub-content-container {
 
-.secondary-content-container { 
+	display: flex;
+	flex-direction: column;
 
-    display: flex;
-    flex-direction: column;
+	.sub-articles-container {
 
+		order: 1;
 
-    .sub-articles-container { 
+		h2 {
+			@include accessible-invisible;
+		}
 
-        h2 { 
-            @include accessible-invisible;
-        }
-        
-    }
-
-    .you-may-also-like-container { 
-
-    }
-
-
-
-    // Medium and larger
-	@media (min-width: $break-lg) {	
-        
-        .sub-articles-container { 
-            order: 2
-        }
-
-        .you-may-also-like-container { 
-            order: 1;
-        }
 	}
 
+	.you-may-also-like-container {
+
+		order: 2;
+
+	}
+
+	// Medium and larger
+	@media (min-width: $break-lg) {
+
+		.sub-articles-container {
+
+			order: 2;
+
+		}
+
+		.you-may-also-like-container {
+
+			order: 1;
+
+		}
+
+
+	}
+
+
 }
+
+
