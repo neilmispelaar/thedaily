@@ -1,0 +1,41 @@
+/*
+    STATCAN DAILY
+    @title: Styles for the home page
+
+*/
+
+// Container to manage the layout of the "You may also like" and "Sub Article" sections
+
+.secondary-content-container { 
+
+    display: flex;
+    flex-direction: column;
+
+
+    .sub-articles-container { 
+
+        h2 { 
+            @include accessible-invisible;
+        }
+        
+    }
+
+    .you-may-also-like-container { 
+
+    }
+
+
+
+    // Medium and larger
+	@media (min-width: $break-lg) {	
+        
+        .sub-articles-container { 
+            order: 2
+        }
+
+        .you-may-also-like-container { 
+            order: 1;
+        }
+	}
+
+}
