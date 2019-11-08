@@ -1,0 +1,34 @@
+{{ define "customstyles" }}
+
+    {{ if (fileExists "assets/scss/sdr.scss") }}
+
+        {{ $scss := resources.Get "scss/sdr.scss" }}
+        {{ $style := $scss | resources.ToCSS }}
+        <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+    {{ end }}
+
+
+{{ end }}
+
+
+{{ define "main" }}
+
+    <main property="mainContentOfPage" class="container">
+
+        <!-- Scope Class -->
+        <div class="statcan-sdr">
+
+        {{- partial "sdr/header-v1.html" . -}}
+
+        {{ .Content }}
+
+        {{- partial "sdr/footer.html" . -}}
+
+        {{- partial "site/mainfooter.html" . -}}
+
+        </div>
+
+    </main>
+
+{{ end }}
