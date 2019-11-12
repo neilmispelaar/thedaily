@@ -96,9 +96,25 @@
 // Navigation bar sticks to the bottom of the screen on mobile 
 .navigation-v1 { 
 
-    
+    .navigation-search { 
+        height: 40px;
+        width: 40px;
+        background-color: $thedaily-primary-color;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
 
-    ul.navigation-links { 
+        padding: 0px 5px 0px 5px;
+        margin: 0px auto 70px auto;
+
+        border-radius: 50px;
+
+        // lift infront of the footer 
+        z-index: 10001;
+
+    }
+
+    .navigation-links { 
 
         height: 80px;
         background-color: $thedaily-secondary-color;
