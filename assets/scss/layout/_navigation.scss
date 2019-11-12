@@ -96,6 +96,27 @@
 // Navigation bar sticks to the bottom of the screen on mobile 
 .navigation-v1 { 
 
+    h2 { 
+        @include accessible-invisible;
+    }
+
+    /* The wrapper around the banner image */
+    .navigation-banner {
+
+        // sm only
+        @media screen and (max-width: $break-md) {
+
+            img {
+                margin-left: auto;
+                margin-right: auto;
+                width: 75% !important;
+            }
+
+        }
+
+
+    }
+
     .navigation-search { 
         height: 40px;
         width: 40px;
