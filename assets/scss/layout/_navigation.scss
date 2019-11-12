@@ -174,12 +174,15 @@
 
 
             a { 
+
+                //border: 1px solid red;
+
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
 
-                
+                text-decoration: none;
                 color: #fff;
                 font-weight: bolder;
 
@@ -193,6 +196,10 @@
 
         li.nl-about { 
             @include accessible-invisible;
+        }
+
+        li.nl-indicators { 
+            margin-right: 35px;
         }
 
 
