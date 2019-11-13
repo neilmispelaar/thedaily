@@ -7,7 +7,7 @@
 // Starting colour for the gradient
 $indicator-gradient-start: rgb(233, 233, 233);
 $indicator-gradient-end: rgb(177, 177, 177);
-$indicator-card-border-radius: 10px;
+$indicator-card-border-radius: 5px;
 
 
 
@@ -159,7 +159,7 @@ $indicator-card-border-radius: 10px;
 
 			.indicator-card {
 
-				padding: 20px;
+				padding: 10px;
 				//margin: 15px;
 
 				min-width: 250px;
@@ -173,7 +173,7 @@ $indicator-card-border-radius: 10px;
 
 				h3 {
 					//white-space: nowrap;
-					font-size: 1.5rem;
+					font-size: 1.3rem;
 
 					margin: 0px;
 					padding: 0px;
@@ -205,24 +205,28 @@ $indicator-card-border-radius: 10px;
 					}
 
 					dd.indicator-time-value {
-						font-size: 1.4rem;
+						font-size: 1.0rem;
 						color: #707070;
 
 						order: 1;
+						padding: 0px;
+						margin: 0px;
 						//background-color: cornflowerblue;
 					}
 
 					dd.indicator-metric-value {
-						font-size: 2.5rem;
+						font-size: 1.5rem;
 						font-weight: bolder;
 
 						order: 2;
+						padding: 0px;
+						margin: 0px;
 						//background-color: green;
 					}
 
 					dd.indicator-change-value {
 
-						font-size: 6rem;
+						font-size: 2.5rem;
 						font-weight: bolder;
 
 						margin: 0px 0px 0px auto;
