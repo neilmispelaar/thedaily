@@ -30,9 +30,9 @@ ul.article-cards-style-main {
 
 		.article-card {
 
-			border: 1px solid $card-border-color;
-			border-radius: $card-border-radius;
-			padding: $card-padding;
+			border-bottom: 1px solid $card-border-color;
+			//border-radius: $card-border-radius;
+			//padding: $card-padding;
 			margin-top: 20px;
 
 			display: flex;
@@ -84,6 +84,9 @@ ul.article-cards-style-main {
 
 				.article-card-new {
 
+					// Remove the new box for now
+					display: none;
+
 					background-color: $new-badge-bg-color;
 					color: $new-badge-text-color;
 					border-radius: 5px;
@@ -117,10 +120,15 @@ ul.article-cards-style-main {
 					}
 				}
 
+				.article-card-date { 
+					font-weight: bolder;
+					font-size: 1.5rem;
+				}
+
 				.article-card-text {
 
 					font-size: 1.6rem;
-					line-height: 2.9rem;
+					line-height: 2.8rem;
 
 				}
 
