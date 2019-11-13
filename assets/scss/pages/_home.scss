@@ -25,19 +25,10 @@
 
 		ul { 
 
-			list-style: none;
+			list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" width="18" height="18"><rect fill="f5a623" width="300" height="300" style="fill:rgb(245, 166, 35);"/></svg>');
 
-			li::before { 
-
-				content: "\25AA";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-				color: $thedaily-primary-color; /* Change the color */
-				font-weight: bold; /* If you want it to be bold */
-				display: inline-block; /* Needed to add space between the bullet and the text */
-				width: 1em; /* Also needed for space (tweak if needed) */
-				margin-left: -1em; /* Also needed for space (tweak if needed) */
-			}
 		}
-
+		
 	}
 
 	// Medium and larger
