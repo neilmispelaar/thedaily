@@ -12,6 +12,7 @@
     }
 }
 
+
 <!-- Scope Class: statcan-sdr -->
 <div class="statcan-sdr">
 
@@ -26,7 +27,7 @@
 			<ul class="indicators-list">
 
                 <li>
-					<article class="indicator-card">
+					<article class="indicator-card value-up">
 
 						<h3>Excepteur sint occaecat</h3>
 
@@ -40,17 +41,17 @@
 
 							<dt>Change as a percentage:</dt>
 							<dd class="indicator-change-value">2.3%</dd>
-
+							<!--
 							<dt>Delta:</dt>
 							<dd class="indicator-delta-value">(monthly change)</dd>
-
+							-->
 						</dl>
 
 					</article>
                 </li>
 
                 <li>
-                    <article class="indicator-card">
+                    <article class="indicator-card value-down">
 
                         <h3>Incididunt ut labore et dolore magna</h3>
 
@@ -64,17 +65,17 @@
 
                             <dt>Change as a percentage:</dt>
                             <dd class="indicator-change-value">55.3%</dd>
-
+							<!--
                             <dt>Delta:</dt>
                             <dd class="indicator-delta-value">(daily change)</dd>
-
+							-->
                         </dl>
 
                     </article>
                 </li>
 
                 <li>
-                    <article class="indicator-card">
+                    <article class="indicator-card value-down">
 
                         <h3>Sed do eiusmod tempor</h3>
 
@@ -88,9 +89,10 @@
 
                             <dt>Change as a percentage:</dt>
                             <dd class="indicator-change-value">-32.7%</dd>
-
-                            <dt>Delta:</dt>
+<!--                            
+							<dt>Delta:</dt>
                             <dd class="indicator-delta-value">(yearly change)</dd>
+-->
 
                         </dl>
 
@@ -98,7 +100,7 @@
                 </li>
 
                 <li>
-                    <article class="indicator-card">
+                    <article class="indicator-card value-up">
 
                         <h3>Consectetur adipiscing elit</h3>
 
@@ -112,38 +114,16 @@
 
                             <dt>Change as a percentage:</dt>
                             <dd class="indicator-change-value">25.5%</dd>
-
+<!--
                             <dt>Delta:</dt>
                             <dd class="indicator-delta-value">(monthly change)</dd>
-
+-->
                         </dl>
 
                     </article>
                 </li>
 
-                <li>
-                    <article class="indicator-card">
-
-                        <h3>Lorem ipsum dolor sit amet</h3>
-
-                        <dl>
-
-                            <dt>Metric:</dt>
-                            <dd class="indicator-metric-value">$1.5 million</dd>
-
-                            <dt>Time Period:</dt>
-                            <dd class="indicator-time-value">July 2019</dd>
-
-                            <dt>Change as a percentage:</dt>
-                            <dd class="indicator-change-value">45.3%</dd>
-
-                            <dt>Delta:</dt>
-                            <dd class="indicator-delta-value">(weekly change)</dd>
-
-                        </dl>
-
-                    </article>
-                </li>
+                
 
 			</ul>
 
@@ -160,16 +140,18 @@
 
                 <div class="col-md-6">
 
-                    <p>Last Updated: Date</p>
+					<p class="
+					small">Last Updated: <time class="text-nowrap">November, 12, 2019, 3:37 PM</time></p>
 
                 </div>
 
+				<!--
                 <div class="col-md-6 bg-info">
 
                     <p>Search</p>
 
                 </div>
-
+				-->
             </div>
 
 
@@ -207,11 +189,15 @@
 
 								</div>
 
+								<div class="article-card-date">
+									<time>October, 9, 2019, 3:37 PM</time>
+								</div>
+
 								<div class="article-card-text">
 
 									<p>A new study, "The gender wage gap in Canada: 1998 to 2018," is now available as part of the Labour Statistics Research Papers series.</p>
 
-									<p><a href="">Read more <span class="wb-inv">about "Study: The gender wage gap in Canada: 1998 to 2018"</span></a></p>
+									<p><a href="" class="btn btn-sm btn-primary">Read more <span class="wb-inv">about "Study: The gender wage gap in Canada: 1998 to 2018"</span></a></p>
 
 								</div>
 
@@ -238,11 +224,15 @@
 									<img src="/images/home/aerial-shot-architecture.jpg" alt="" />
 								</div>
 
+								<div class="article-card-date">
+									<time>October, 9, 2019, 3:37 PM</time>
+								</div>
+
 								<div class="article-card-text">
 
 									<p>Shipments of asphalt shingles totalled 2.5 million metric bundles in August, down 30.2% from the previous month and down 29.1% from August 2018.</p>
 
-									<p><a href="">Read more <span class="wb-inv">about "Asphalt roofing material, August 2019"</span></a></p>
+									<p><a href="" class="btn btn-sm btn-primary">Read more <span class="wb-inv">about "Asphalt roofing material, August 2019"</span></a></p>
 
 								</div>
 
@@ -283,6 +273,11 @@
 
 										</div>
 
+										<div class="article-card-date">
+											<time>October, 9, 2019, 3:37 PM</time>
+										</div>
+		
+
 										<div class="article-card-text">
 
 											<p>A new study, "The gender wage gap in Canada: 1998 to 2018," is now available as part of the Labour Statistics Research Papers series.</p>
@@ -314,6 +309,11 @@
 											<img src="/images/home/aerial-shot-architecture.jpg" alt="" />
 										</div>
 
+										<div class="article-card-date">
+											<time>October, 9, 2019, 3:37 PM</time>
+										</div>
+		
+
 										<div class="article-card-text">
 
 											<p>Shipments of asphalt shingles totalled 2.5 million metric bundles in August, down 30.2% from the previous month and down 29.1% from August 2018.</p>
@@ -336,9 +336,9 @@
 						<h2>You May Also Like</h2>
 
 						<ul>
-							<li>My Stat Can</li>
-							<li>Last week tonight</li>
-							<li>Watch: Trevor Noah</li>
+							<li><a href="#">My StatCan</a></li>
+							<li><a href="#">The Weekly Review</a></li>
+							<li><a href="#">Watch: Review economic statistics</a></li>
 						</ul>
 
 					</div>

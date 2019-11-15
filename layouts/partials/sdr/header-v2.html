@@ -5,22 +5,44 @@
     <!-- To do: Will require a French translation here -->
     <h2>Statistics Canada The Daily Main Navigation</h2>
 
-    <h1>Version 2</h1>
+    <div class="navigation-container">
 
-    <!-- To do: Logo -->
-    <div class="navigation-banner">
-        <a class="" href="">
-            <img src="{{ "/images/logo/logo.png" | relURL }}" alt="" class="img-responsive" />
-        </a>
+        <!-- To do: Logo -->
+        <div class="navigation-banner">
+            <a class="" href="">
+                <img src="{{ "/images/logo/logo.png" | relURL }}" alt="" class="img-responsive" width="250px"  />
+            </a>
+        </div>
+
+        <div class="navigation-button">
+            <button type="button" class="wb-toggle" data-toggle='{
+                "selector": ".navigation-links", 
+                "parent": ".navigation-container", 
+                "print": "on",
+                "stateOn" : "blah",
+                "stateOff" : "blahoff"}'>
+
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="40" height="40"
+                viewBox="0 0 50 50"
+                style=" fill:#000000;"><path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+                </svg>
+            
+            </button>
+        </div>
+
+        <div class="navigation-links">
+            <ul>
+                <li><a href="">Release schedule</a></li>
+                <li><a href="">Indicators</a></li>
+                <li><a href="">Special interest</a></li>
+                <li><a href="">Release by subject</a></li>
+                <li><a href="">About the Daily</a></li>
+            </ul>
+        </div>
+        
+
     </div>
-
-    <ul class="navigation-links">
-        <li><a href="">Release schedule</a></li>
-        <li><a href="">Indicators</a></li>
-        <li><a href="">Special interest</a></li>
-        <li><a href="">Release by subject</a></li>
-        <li><a href="">About the Daily</a></li>
-    </ul>
 
 </nav>
 <!-- End Navigation -->

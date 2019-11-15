@@ -22,9 +22,6 @@
 
     }
 
-
-
-
     /* Hide the navigation header */
     h2 {
         @include accessible-invisible;
@@ -236,7 +233,82 @@
 // Navigation Version 2
 // Navigation bar implements Hamburger menu on mobile
 .navigation-v2 { 
-    background-color: red;
+    
+    h2 { 
+        @include accessible-invisible;
+    }
+
+    .navigation-container { 
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        padding: 30px 0px 30px 0px;
+
+
+        .navigation-banner { 
+            
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .navigation-button { 
+
+            // Hide in large view
+            
+            button { 
+                
+                display: flex;
+                align-items: center;
+                
+                background: white;
+                border: none;
+                                
+                margin: 0px;
+                padding: 0px;
+                
+            }
+
+            button:hover { 
+                background: gray;
+            }
+
+        }
+
+        .navigation-links {
+            display: block;
+            width: 100%;
+            flex-grow: 1;
+            //flex-basis: 100%;
+
+            ul { 
+                list-style: none;
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+
+                li { 
+                    font-weight: bolder;
+
+                    a { 
+                        color: $thedaily-link-color !important;
+                    }
+                }
+            }
+            
+        }
+
+
+
+    }
+
+    .blah { 
+        background-color:red;
+    }
+
+   
 }
 
 
