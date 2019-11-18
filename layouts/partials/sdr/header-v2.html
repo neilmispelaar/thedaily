@@ -15,12 +15,14 @@
         </div>
 
         <div class="navigation-button">
-            <button type="button" class="wb-toggle" data-toggle='{
-                "selector": ".navigation-links", 
-                "parent": ".navigation-container", 
-                "print": "on",
-                "stateOn" : "blah",
-                "stateOff" : "blahoff"}'>
+            <button type="button" class="wb-toggle"
+                data-toggle='{
+                    "selector": ".navigation-links", 
+                    "parent": ".navigation-container",
+                    "print": "on",
+                    "stateOn" : "show",
+                    "stateOff" : "hide"}'
+                >
 
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="40" height="40"
@@ -31,7 +33,7 @@
             </button>
         </div>
 
-        <div class="navigation-links">
+        <div class="navigation-links hide">
             <ul>
                 <li><a href="">Release schedule</a></li>
                 <li><a href="">Indicators</a></li>
