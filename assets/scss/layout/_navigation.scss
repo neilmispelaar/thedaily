@@ -317,7 +317,39 @@
 // Navigation Version 3
 // Navigation bar implements dropdown menu on mobile 
 .navigation-v3 { 
-    background-color: blue;
+    
+    h2 { 
+        @include accessible-invisible;
+    }
+
+    .navigation-container { 
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        padding: 30px 0px 30px 0px;
+
+
+        .navigation-banner { 
+            
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+
+            width: 40%;
+        }
+
+        .navigation-links { 
+
+            width: 60%;
+
+        }
+
+    }
+
+
 }
 
 
