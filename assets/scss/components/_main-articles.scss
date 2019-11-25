@@ -7,7 +7,7 @@
 
 // Variables
 $card-border-color: #cccccc;
-$card-border-radius: 10px;
+$card-border-radius: 0px;
 $card-padding: 10px 15px 15px 15px;
 $card-background-color: #f8f8f8;
 $img-border-radius: 0px;
@@ -139,6 +139,24 @@ ul.article-cards-style-main {
 			}
 
 
+		}
+
+	}
+
+	// Medium and larger
+	@media (min-width: $break-lg) {
+
+		li {
+
+			.article-card {
+
+				//background-color: red;
+				border: 1px solid $card-border-color;
+				border-radius: $card-border-radius;
+				padding: $card-padding;
+
+			}
+		
 		}
 
 	}
