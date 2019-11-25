@@ -331,6 +331,7 @@
         
         padding: 30px 0px 30px 0px;
 
+       
 
         .navigation-banner { 
             
@@ -343,8 +344,44 @@
 
         .navigation-links { 
 
+            //border: 1px solid red;
             width: 60%;
 
+            label { 
+                @include accessible-invisible;
+            }
+
+            select { 
+                
+                // Remove the default appearance
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+
+                /* Hide the arrow in IE */
+                &::-ms-expand { 
+                    display: none; 
+                }
+                
+                
+                border: 3px solid $thedaily-link-color;
+                border-radius: 10px;
+                height: 70px;
+
+                padding: 10px;
+
+                color: $thedaily-link-color;
+                font-weight: bolder;
+
+                // Draw the down arrow
+                background-image: url("/images/navigation/v3/down.svg");
+                background-position: center right 10px; 
+                background-repeat: no-repeat;
+                background-size: 25px;
+                
+            }
+
+            
         }
 
     }
