@@ -339,13 +339,13 @@
             align-items: center;
             flex-shrink: 0;
 
-            width: 60%;
+            width: 50%;
         }
 
         .navigation-links { 
 
             //border: 1px solid red;
-            width: 30%;
+            width: 45%;
 
             label { 
                 @include accessible-invisible;
