@@ -339,13 +339,13 @@
             align-items: center;
             flex-shrink: 0;
 
-            width: 50%;
+            width: 60%;
         }
 
         .navigation-links { 
 
             //border: 1px solid red;
-            width: 40%;
+            width: 30%;
 
             label { 
                 @include accessible-invisible;
@@ -368,7 +368,7 @@
                 border-radius: 10px;
                 
                 height: 40px;
-                padding: 5px;
+                padding: 0px;
 
                 color: $thedaily-link-color;
                 font-weight: bolder;
