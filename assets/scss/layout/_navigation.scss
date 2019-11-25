@@ -329,9 +329,9 @@
         justify-content: space-between;
         flex-wrap: wrap;
         
-        padding: 30px 0px 30px 0px;
+        padding: 0px 0px 0px 0px;
 
-       
+        //border: 1px solid red;
 
         .navigation-banner { 
             
@@ -345,7 +345,7 @@
         .navigation-links { 
 
             //border: 1px solid red;
-            width: 60%;
+            width: 50%;
 
             label { 
                 @include accessible-invisible;
@@ -363,12 +363,12 @@
                     display: none; 
                 }
                 
-                
+                font-size: 1.1rem;
                 border: 3px solid $thedaily-link-color;
                 border-radius: 10px;
-                height: 70px;
-
-                padding: 10px;
+                
+                height: 40px;
+                padding: 5px;
 
                 color: $thedaily-link-color;
                 font-weight: bolder;
