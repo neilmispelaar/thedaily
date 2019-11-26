@@ -208,9 +208,26 @@
     @media screen and (min-width: $break-md) {
 
         flex-direction: row;
-        background-color: red;
+        //background-color: red;
 
-        ul.navigation-links { 
+        .navigation-links { 
+
+            border-top: 1px solid grey; 
+            border-bottom: 1px solid #969595; 
+
+            padding: 10px 0px 0px 0px;
+            margin: 0px 0px 0px 0px;
+
+            position: relative;
+            background-color: #969595;
+
+            li a img { 
+                @include accessible-invisible;
+            }
+
+            li a { 
+                color: #000;
+            }
 
             li.nl-about { 
                 position: relative;
@@ -222,6 +239,29 @@
                 white-space: auto;
                 border: 0;
             }
+        }
+
+        .navigation-search { 
+            height: 50px;
+            width: 50px;
+            background-color: #fff;
+            
+            border-radius: 0px;
+            box-shadow: none;
+    
+            overflow: hidden;
+            position: relative;
+            bottom: 0;
+            right: 0;
+            left:0;
+    
+            padding: 0px;
+            margin: 0px;
+    
+    
+            // lift infront of the footer 
+            z-index: 10001;
+    
         }
 
     }
