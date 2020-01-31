@@ -6,23 +6,19 @@
     <h2>Statistics Canada The Daily Main Navigation</h2>
 
     <!-- To do: Logo -->
-    <div class="navigation-banner">
+    <div class="navigation-banner col-xs-12 col-md-3">
         <a class="" href="">
             <img src="{{ "/images/logo/logo.png" | relURL }}" alt="" class="img-responsive" />
         </a>
     </div>
 
-    <div class="navigation-search">
-        <a href="" title="Search The Daily">
-            <img src="{{ "/images/navigation/v1/ico-home.png" | relURL }}" alt="Icon search">
-        </a>
-    </div>
+
 
     <ul class="navigation-links">
         <li class="nl-schedule">
             <a href="">
                 <img src="{{ "/images/navigation/v1/ico-schedule.png" | relURL }}" alt="" />
-                <span class="hidden-xs">Release </span>Schedule
+                <span class="hidden-xs nowrap">Release </span>Schedule
             </a>
         </li>
         <li class="nl-indicators">
@@ -46,6 +42,11 @@
         </li>
         <li class="nl-about"><a href="">About the Daily</a></li>
     </ul>
+	<div class="navigation-search">
+		<a href="" title="Search The Daily">
+			<img src="{{ "/images/navigation/v1/ico-home.png" | relURL }}" alt="Icon search">
+		</a>
+	</div>
 
 </nav>
 <!-- End Navigation -->
