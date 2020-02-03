@@ -128,7 +128,7 @@
         right: 0;
         left:0;
 
-        padding: 5px 5px 5px 10px;
+        padding: 5px 5px 5px 8px;
         margin: 0px auto 50px auto;
 
 
@@ -139,7 +139,7 @@
 
     .navigation-links { 
 
-        height: 80px;
+        //height: 80px;
         background-color: $thedaily-secondary-color;
         overflow: hidden;
         position: fixed;
@@ -147,7 +147,7 @@
         right: 0;
         width: 100%;
 
-        padding: 10px 0px 0px 0px;
+        padding: 10px 0px;
         margin: 0px 0px 0px -20px;
         list-style: none;
 
@@ -207,6 +207,7 @@
     // Medium devices and up
     @media screen and (min-width: $break-md) {
 
+
         flex-direction: row;
         //background-color: red;
 
@@ -215,20 +216,26 @@
             border-top: 1px solid grey; 
             border-bottom: 1px solid #969595; 
 
-            padding: 10px 0px 0px 0px;
+            padding: 10px 0px;
             margin: 20px 0px 0px 0px;
 
             position: relative;
             background-color: #969595;
-
+			height: auto;
             li a img { 
                 @include accessible-invisible;
             }
-
+			li{
+				padding: 5px;
+			}
             li a { 
                 color: #000;
+				font-weight: 100;
+				font-size: 1.3rem;
             }
-
+			li.nl-indicators{
+				margin-right: 0;
+			}
             li.nl-about { 
                 position: relative;
                 width: auto;
@@ -238,6 +245,10 @@
                 clip: none;
                 white-space: auto;
                 border: 0;
+				a{
+					font-weight: 600;
+					padding: 5px;
+				}
             }
         }
 
@@ -265,8 +276,6 @@
         }
 
     }
-
-
 }
 
 
@@ -471,7 +480,10 @@
 
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 768px) {
+	.lg-float{
+		float: right;
+	}
 	.navigation-v1 .navigation-links{
 		max-width:75% !important;
 		float: left !important;
@@ -491,5 +503,24 @@
 	}
 	.navigation-search{
 		display: none;
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+	.navigation-v1 .navigation-links li{
+		padding: 5px;
+	}
+}
+
+@media screen and (min-width: 997px) {
+	.navigation-v1 .navigation-links li{
+		padding: 8px;
+	}
+	.navigation-v1 .navigation-links .nl-about{
+		padding:3px 8px 5px 8px !important;
+	}
+	.navigation-v1 .navigation-links li a{
+		font-size:1.5rem !important;
 	}
 }

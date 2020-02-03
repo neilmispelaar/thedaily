@@ -282,10 +282,12 @@ $indicator-card-border-radius: 0px;
 
 
 
+
 	}
 
 	// Medium and larger
 	@media (min-width: $break-md) {
+
 
 	}
 
@@ -301,4 +303,22 @@ $indicator-card-border-radius: 0px;
 
 .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before{
 	color: #1c578a;
+}
+
+
+#line{
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	#line{
+		display: block;
+		border-top:1px solid orange;
+		margin-bottom: 20px;
+	}
+
+	.indicators{
+		MAX-WIDTH: calc(100% - 58px);
+		margin: 10px auto;
+	}
 }

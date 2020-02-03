@@ -6,19 +6,19 @@
     <h2>Statistics Canada The Daily Main Navigation</h2>
 
     <!-- To do: Logo -->
-    <div class="navigation-banner col-xs-12 col-md-3">
+    <div class="navigation-banner col-xs-12 col-sm-3">
         <a class="" href="">
             <img src="{{ "/images/logo/logo.png" | relURL }}" alt="" class="img-responsive" />
         </a>
     </div>
 
 
-
-    <ul class="navigation-links">
+    <ul class="navigation-links list-inline menu" role="menubar">
         <li class="nl-schedule">
-            <a href="">
+            <a href="" class="item" role="menuitem">
                 <img src="{{ "/images/navigation/v1/ico-schedule.png" | relURL }}" alt="" />
-                <span class="hidden-xs nowrap">Release </span>Schedule
+<!--                <span class="hidden-xs nowrap">Release </span>Schedule-->
+				Release Schedule
             </a>
         </li>
         <li class="nl-indicators">
@@ -31,13 +31,15 @@
         <li class="nl-interest">
             <a href="">
                 <img src="{{ "/images/navigation/v1/ico-interests.png" | relURL }}" alt="" />
-                <span class="hidden-xs">Special </span>Interest
+<!--                <span class="hidden-xs">Special </span>Interest-->
+				Special Interest
             </a>
         </li>
         <li class="nl-subject">
             <a href="">
                 <img src="{{ "/images/navigation/v1/ico-subjects.png" | relURL }}" alt="" />
-                <span class="hidden-xs">Release by </span>Subject
+<!--                <span class="hidden-xs">Release by </span>Subject-->
+				Release by Subject
             </a>
         </li>
         <li class="nl-about"><a href="">About the Daily</a></li>
@@ -50,13 +52,13 @@
 
 </nav>
 <!-- End Navigation -->
-
-<section class="visible-xs-block visible-sm-block mrgn-tp-md">
-
+<div id="line" style="clear:both;"></div>
+<!--<section class="visible-xs-block visible-sm-block mrgn-tp-md">-->
+<section class="mrgn-tp-md">
         <form class="form-inline">
-            <div class="form-group">
+            <div class="form-group lg-float">
     
-                <div class="input-group">
+                <div class="input-group ">
                     <input type="text" class="form-control brdr-rds-0" id="exampleInputAmount" placeholder="Search the Daily">
                    
                     <div class="input-group-addon" style="padding: 0px; border: none;">
@@ -68,3 +70,4 @@
         </form>
     
     </section>
+<div style="clear:both"></div>
