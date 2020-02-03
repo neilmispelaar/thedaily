@@ -14,7 +14,11 @@
 		order: 1;
 
 		h2 {
-			@include accessible-invisible;
+			//@include accessible-invisible;
+			font-size: 2rem;
+			padding: 0 !important;
+			border: none;
+			margin: 15px 0;
 		}
 
 	}
