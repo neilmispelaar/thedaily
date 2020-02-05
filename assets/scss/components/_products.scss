@@ -31,7 +31,7 @@ ul.product-list {
 		.product-card {
 
 			h3 {
-				//margin-top: 0px;
+				font: Bold 16px/25px Noto Sans;
 				margin-bottom: 5px;
 			}
 
@@ -43,6 +43,7 @@ ul.product-list {
 
 				dt {
 					font-weight: normal;
+					font: 300 16px/25px Noto Sans;
 				}
 
 				dd {
@@ -90,3 +91,15 @@ ul.product-list {
 
 }
 
+
+.footer-h2{
+	font: Bold 24px/39px Lato;
+}
+
+.footer-h3{
+	font: Bold 18px/22px Noto Sans;
+}
+
+.footer-info{
+	font: 300 16px/28px Noto Sans;
+}
