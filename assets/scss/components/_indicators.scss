@@ -162,8 +162,8 @@ $indicator-card-border-radius: 0px;
 				padding: 10px;
 				//margin: 15px;
 
-				min-width: 250px;
-				height: 100%;
+				width: 220px;
+				height: 77px;
 
 				border-radius: $indicator-card-border-radius;
 				border: 1px solid #ddd7d7;
@@ -228,10 +228,10 @@ $indicator-card-border-radius: 0px;
 
 					dd.indicator-change-value {
 
-						font-size: 2.5rem;
+						font-size: 24px;
 						font-weight: bolder;
 
-						margin: 0px 0px 0px auto;
+						margin: -11px 0px 0px 107px;
 						padding: 0px;
 						order: 3;
 						//background-color: orange;
@@ -252,14 +252,14 @@ $indicator-card-border-radius: 0px;
 				&.value-up { 
 
 					background-image: url('/images/indicators/indicator-up.png'),  linear-gradient(to right, #e0e0e0, #fff);;
-					background-position: 105% , top right;
+					background-position: 107% 0px, top right;
 					background-repeat: no-repeat, repeat;
 				}
 				
 				&.value-down { 
 
 					background-image: url('/images/indicators/indicator-down.png'),  linear-gradient(to right, #e0e0e0, #fff);;
-					background-position: 105% , top right;
+					background-position: 107% 0px, top right;
 					background-repeat: no-repeat, repeat;
 				}
 

@@ -42,20 +42,26 @@ ul.article-cards-style-main {
 
 			.article-card-title {
 
-				margin-top: 10px;
+				//margin-top: 10px;
 				font-size: 2.5rem;
 				font-weight: bolder;
 
-				a {
-					text-decoration: none !important;
-					color: $title-text-color;
+				h3 {
+					margin: 0px;
+					padding: 0px;
+
+					a {
+						text-decoration: none;
+						color: $title-text-color;
+						font: Bold 20px/28px Lato !important;
+					}
 				}
 
 				a:visited { 
 					color: $title-text-color;
 				}
 
-				h2,h3,h4,h5,h6 {
+				h2,h4,h5,h6 {
 					margin: 0px;
 					padding: 0px;
 					font-size: inherit;
@@ -85,6 +91,7 @@ ul.article-cards-style-main {
 					a {
 						color: inherit;
 						text-decoration: none;
+						font: Bold 18px/38px Lato;
 					}
 
 				}
@@ -127,14 +134,15 @@ ul.article-cards-style-main {
 					}
 				}
 
-				.article-card-date { 
-					font-weight: bolder;
-					font-size: 1.5rem;
+				.article-card-date {
+					time{
+						font-size:14px;
+					}
 				}
 
 				.article-card-text {
 
-					font-size: 1.6rem;
+					font-size: 16px;
 					line-height: 2.4rem;
 
 				}
@@ -156,7 +164,7 @@ ul.article-cards-style-main {
 				//background-color: red;
 				//border: 1px solid $card-border-color;
 				border-radius: $card-border-radius;
-				padding: $card-padding;
+				padding: 0 0 15px 0;
 
 			}
 		
@@ -191,20 +199,27 @@ ul.article-cards-style-sub {
 
 			.article-card-title {
 
-				margin: 0px 0px 5px 0px;
-				font-size: 2.0rem;
-				font-weight: bolder;
+				//margin: 0px 0px 5px 0px;
+				h3{
+					margin: 0px;
+					padding: 0px;
+					a{
 
+						color: $title-text-color;
+						font: Bold 20px/28px Lato !important;
+					}
+				}
 				a {
 					text-decoration: none !important;
 					color: $title-text-color;
+					font: Bold 20px/28px Lato !important;
 				}
 	
 				a:visited { 
 					color: $title-text-color;
 				}
 
-				h2,h3,h4,h5,h6 {
+				h2, h4,h5,h6 {
 					margin: 0px;
 					padding: 0px;
 					font-size: inherit;
@@ -309,12 +324,11 @@ ul.article-cards-style-sub {
 
 				//border: 1px solid $card-border-color;
 				border-radius: $card-border-radius;
-				padding: $card-padding;
+				padding: 0 0 15px 0;
 
 				.article-card-title {
 
-					margin: 10px 0px 0px 0px;
-					font-size: 2.5rem;
+					//margin: 10px 0px 0px 0px;
 
 				}
 
@@ -382,6 +396,9 @@ ul.article-cards-style-sub {
 	li{
 		a{
 			text-decoration: none;
+			font: Bold 16px/39px Lato;
+			line-height: 0px;
 		}
 	}
 }
+
