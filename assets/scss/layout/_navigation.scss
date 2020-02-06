@@ -152,7 +152,7 @@
         list-style: none;
 
 
-        // lift infront of the footer 
+        // lift infront of the footer
         z-index: 10000;
 
 
@@ -162,15 +162,23 @@
         align-items: stretch;
         justify-content: space-around;
 
-        li { 
+        li {
 
             flex-grow: 1;
-            text-align: center;           
-        
+            text-align: center;
             font-size: 1rem;
+			transition: 200ms ease-in-out;
+			&:hover{
+				background-color: #F5A623;
+				color: #fff;
+				cursor: pointer;
+				a{
+					color: #fff;
+				}
+			}
 
 
-            a { 
+            a {
 
                 //border: 1px solid red;
 
@@ -183,19 +191,19 @@
                 color: #fff;
                 font-weight: bolder;
 
-                img { 
+                img {
                     width: 20px;
                 }
-       
+
             }
 
         }
 
-        li.nl-about { 
+        li.nl-about {
             @include accessible-invisible;
         }
 
-        li.nl-indicators { 
+        li.nl-indicators {
             margin-right: 35px;
         }
 
@@ -211,10 +219,10 @@
         flex-direction: row;
         //background-color: red;
 
-        .navigation-links { 
+        .navigation-links {
 
-            border-top: 1px solid grey; 
-            border-bottom: 1px solid #969595; 
+            border-top: 1px solid grey;
+            border-bottom: 1px solid #969595;
 
             padding: 10px 0px;
             margin: 20px 0px 0px 0px;
@@ -222,13 +230,13 @@
             position: relative;
             background-color: #969595;
 			height: auto;
-            li a img { 
+            li a img {
                 @include accessible-invisible;
             }
 			li{
 				padding: 5px;
 			}
-            li a { 
+            li a {
                 color: #000;
 				font-weight: 100;
 				font-size: 1.3rem;
@@ -236,7 +244,7 @@
 			li.nl-indicators{
 				margin-right: 0;
 			}
-            li.nl-about { 
+            li.nl-about {
                 position: relative;
                 width: auto;
                 height: auto;
@@ -246,33 +254,33 @@
                 white-space: auto;
                 border: 0;
 				a{
-					font-weight: 600;
+					//font-weight: 600;
 					padding: 5px;
 				}
             }
         }
 
-        .navigation-search { 
+        .navigation-search {
             height: 50px;
             width: 50px;
             background-color: #fff;
-            
+
             border-radius: 0px;
             box-shadow: none;
-    
+
             overflow: hidden;
             position: relative;
             bottom: 0;
             right: 0;
             left:0;
-    
+
             padding: 0px;
             margin: 0px;
-    
-    
-            // lift infront of the footer 
+
+
+            // lift infront of the footer
             z-index: 10001;
-    
+
         }
 
     }
@@ -281,44 +289,44 @@
 
 // Navigation Version 2
 // Navigation bar implements Hamburger menu on mobile
-.navigation-v2 { 
-    
-    h2 { 
+.navigation-v2 {
+
+    h2 {
         @include accessible-invisible;
     }
 
-    .navigation-container { 
+    .navigation-container {
 
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        
+
         padding: 0px 0px 0px 0px;
 
 
-        .navigation-banner { 
-            
+        .navigation-banner {
+
             display: flex;
             align-items: center;
             flex-shrink: 0;
         }
 
-        .navigation-button { 
+        .navigation-button {
 
             // Hide in large view
-            
-            button { 
-                
+
+            button {
+
                 display: flex;
                 align-items: center;
-                
+
                 background: white;
                 border: none;
-                                
+
                 margin: 0px;
                 padding: 0px;
-                
+
             }
 
         }
@@ -329,32 +337,32 @@
             flex-grow: 1;
             //flex-basis: 100%;
 
-            ul { 
+            ul {
                 list-style: none;
                 margin: 20px 0px 0px 0px;
                 padding: 0px 0px 0px 0px;
 
-                li { 
+                li {
                     font-weight: normal;
                     margin: 0px 0px 0px 0px;
-                    
-                    border-bottom: 1px solid #6e6e6e;
-                    
 
-                    a { 
+                    border-bottom: 1px solid #6e6e6e;
+
+
+                    a {
                         margin: 0px 0px 0px 0px;
                         padding: 10px 10px 10px 10px;
                         color: #4d4d4d; //$thedaily-link-color !important;
                         text-decoration: none;
-                       
+
                         display: block;
                     }
 
-                    a:visited { 
+                    a:visited {
                         color: #4d4d4d; //$thedaily-link-color !important;
                     }
 
-                    a.active { 
+                    a.active {
                         background-color: $thedaily-link-color;
                         font-weight: bolder;
                         color: #fff;
@@ -363,47 +371,47 @@
 
                 }
 
-                li:last-child { 
+                li:last-child {
                     border-bottom: none;
                 }
 
             }
-            
+
         }
 
 
 
     }
 
-    .blah { 
+    .blah {
         background-color:red;
     }
 
-   
+
 }
 
 
 // Navigation Version 3
-// Navigation bar implements dropdown menu on mobile 
-.navigation-v3 { 
-    
-    h2 { 
+// Navigation bar implements dropdown menu on mobile
+.navigation-v3 {
+
+    h2 {
         @include accessible-invisible;
     }
 
-    .navigation-container { 
-        
+    .navigation-container {
+
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        
+
         padding: 0px 0px 0px 0px;
 
         //border: 1px solid red;
 
-        .navigation-banner { 
-            
+        .navigation-banner {
+
             display: flex;
             align-items: center;
             flex-shrink: 0;
@@ -411,17 +419,17 @@
             width: 50%;
         }
 
-        .navigation-links { 
+        .navigation-links {
 
             //border: 1px solid red;
             width: 45%;
 
-            label { 
+            label {
                 @include accessible-invisible;
             }
 
-            select { 
-                
+            select {
+
                 // Remove the default appearance
                 appearance: none;
                 -webkit-appearance: none;
@@ -492,9 +500,9 @@
 		border-bottom: none;
 		padding: 0;
 		.nl-about{
-			background-color: #f5a623;
+			//background-color: #f5a623;
 			a{
-				color: #ffffff !important;
+				//color: #ffffff !important;
 			}
 		}
 	}
