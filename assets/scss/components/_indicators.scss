@@ -318,7 +318,7 @@ $indicator-card-border-radius: 0px;
 	}
 
 	.indicators{
-		MAX-WIDTH: calc(100% - 58px);
-		margin: 10px auto;
+		max-width: calc(100% - 58px);
+		margin: 30px auto 10px;
 	}
 }
