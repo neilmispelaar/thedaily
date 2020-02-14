@@ -154,7 +154,7 @@ $indicator-card-border-radius: 0px;
 			flex-basis: auto;
 
 			padding: 0px 0px 0px 0px;
-			margin: 0px 0px 0px 20px;
+			margin: 0px 20px 0px 0px;
 
 
 			.indicator-card {
@@ -269,7 +269,7 @@ $indicator-card-border-radius: 0px;
 			&:last-child {
 
 				//margin-right: 40px !important;
-				padding-right: 40px !important;
+				//padding-right: 40px !important;
 				//border: 1px solid red;
 				//border-right: 25px solid white;
 			}
@@ -321,4 +321,8 @@ $indicator-card-border-radius: 0px;
 		max-width: calc(100% - 58px);
 		margin: 30px auto 10px;
 	}
+}
+
+.slick-next{
+	right: -20px;
 }
