@@ -410,6 +410,6 @@ ul.article-cards-style-sub {
 	border: none !important;
 }
 
-.article-card:last-of-class{
-	border: none;
+.article-cards-style-main li:last-of-type .article-card{
+	border: none !important;
 }
