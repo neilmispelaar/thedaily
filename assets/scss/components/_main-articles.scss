@@ -328,9 +328,7 @@ ul.article-cards-style-sub {
 				//border: 1px solid $card-border-color;
 				border-radius: $card-border-radius;
 				padding: 0 0 15px 0;
-				&:last-of-type{
-					border:none;
-				}
+
 
 				.article-card-title {
 
@@ -410,4 +408,8 @@ ul.article-cards-style-sub {
 
 .visualizations{
 	border: none !important;
+}
+
+.article-card:last-of-class{
+	border: none;
 }

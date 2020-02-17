@@ -147,7 +147,7 @@
         right: 0;
         width: 100%;
 
-        padding: 20px 0px;
+        padding: 15px 0 20px 0px;
         margin: 0px 0px 0px -20px;
         list-style: none;
 
@@ -167,15 +167,7 @@
             flex-grow: 1;
             text-align: center;
             font-size: 1rem;
-			transition: 200ms ease-in-out;
-			&:hover{
-				background-color: #F5A623;
-				color: #fff;
-				cursor: pointer;
-				a{
-					color: #fff;
-				}
-			}
+
 
 
             a {
@@ -235,6 +227,15 @@
             }
 			li{
 				padding: 5px;
+				transition: 200ms ease-in-out;
+				&:hover{
+					background-color: #F5A623;
+					color: #fff;
+					cursor: pointer;
+					a{
+						color: #fff;
+					}
+				}
 			}
             li a {
                 color: #000;
