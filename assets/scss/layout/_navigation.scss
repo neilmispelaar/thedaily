@@ -102,6 +102,7 @@
 
         // sm only
         @media screen and (max-width: $break-md) {
+            padding-bottom: 24px;
 
             img {
                 margin-left: auto;
@@ -171,8 +172,9 @@
         li {
 
             flex-grow: 1;
+            flex-basis: 0;
             text-align: center;
-            font-size: 1rem;
+            font-size: 1.4rem;
 
 
 
@@ -199,10 +201,6 @@
 
         li.nl-about {
             @include accessible-invisible;
-        }
-
-        li.nl-indicators {
-            margin-right: 35px;
         }
 
 

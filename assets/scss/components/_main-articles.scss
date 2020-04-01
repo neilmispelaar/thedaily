@@ -413,3 +413,15 @@ ul.article-cards-style-sub {
 .article-cards-style-main li:last-of-type .article-card{
 	border: none !important;
 }
+
+.twitter-feed{
+	.twitter-articles{
+		max-height: 800px;
+		overflow-y: scroll;
+	}
+	.twitter-link{
+		font-size: 16px;
+		text-align: right;
+		margin-top:10px;
+	}
+}
