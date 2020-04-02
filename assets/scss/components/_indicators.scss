@@ -306,15 +306,15 @@ $indicator-card-border-radius: 0px;
 }
 
 
-#line{
-	display: none;
+.line{
+	display: block;
+	border-top:1px solid orange;
+	margin: 20px 0px;
 }
 
 @media screen and (min-width: 768px) {
-	#line{
-		display: block;
-		border-top:1px solid orange;
-		margin-bottom: 20px;
+	.line{
+		display:none;
 	}
 
 	.indicators{

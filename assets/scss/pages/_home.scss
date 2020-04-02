@@ -11,21 +11,28 @@
 
 	.sub-articles-container {
 
-		order: 1;
+		order: 2;
 
 		h2 {
 			//@include accessible-invisible;
 			font-size: 2rem;
 			padding: 0 !important;
 			border: none;
-			margin: 15px 0;
+			margin: 30px 0;
 		}
 
+		.also-available-sm{
+			display:block;
+
+			.footer-h2{
+				margin:0px;
+			}
+		}
 	}
 
 	.you-may-also-like-container {
 
-		order: 2;
+		order: 1;
 
 		ul { 
 
@@ -43,13 +50,16 @@
 
 		.sub-articles-container {
 
-			order: 2;
+			// order: 2;
 
+			.also-available-sm{
+				display:none;		
+			}
 		}
 
 		.you-may-also-like-container {
 
-			order: 1;
+			// order: 1;
 			margin-top: 35px;
 		}
 

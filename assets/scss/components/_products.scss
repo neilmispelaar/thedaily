@@ -104,8 +104,15 @@ ul.product-list {
 	font: 300 16px/28px Noto Sans;
 }
 
-.also-avail{
-	p{
-		font: 400 16px/25px Noto Sans;
+.also-available-lg{
+	display:none;
+
+	@media (min-width: $break-lg) {
+		display:block;
+	}
+	.also-avail{
+		p{
+			font: 400 16px/25px Noto Sans;
+		}
 	}
 }
