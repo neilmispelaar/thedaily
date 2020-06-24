@@ -200,7 +200,8 @@
         }
 
         li.nl-about {
-            @include accessible-invisible;
+            // @include accessible-invisible;
+            display:none;
         }
 
 
@@ -239,7 +240,7 @@
 					a{
 						color: #fff;
 					}
-				}
+                }
 			}
             li a {
                 color: #000;
@@ -493,11 +494,8 @@
 		border-bottom: 1px solid #f5a623;
 		background-color: transparent;
 		padding: 0;
-		.nl-about{
-			//background-color: #f5a623;
-			a{
-				//color: #ffffff !important;
-			}
+		li.nl-about{
+            display:flex;
 		}
 	}
 	.navigation-v1{
