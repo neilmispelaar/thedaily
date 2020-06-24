@@ -35,7 +35,7 @@ ul.article-cards-style-main {
 			border-bottom: 1px solid $card-border-color;
 			//border-radius: $card-border-radius;
 			//padding: $card-padding;
-			margin-top: 20px;
+			margin-top: 10px;
 
 			display: flex;
 			flex-direction: column;
@@ -49,6 +49,7 @@ ul.article-cards-style-main {
 				h3 {
 					margin: 0px;
 					padding: 0px;
+					font-size: 1.8rem;
 
 					a {
 						text-decoration: none;
@@ -79,7 +80,7 @@ ul.article-cards-style-main {
 
 				.article-card-category {
 
-					font-size: 1.5rem;
+					font-size: 1.6rem;
 					color: $category-text-color;
 					font-weight: bold;
 					padding: 0px;
@@ -136,19 +137,21 @@ ul.article-cards-style-main {
 
 				.article-card-date {
 					time{
-						font-size:14px;
+						font-size:1.4rem;
 					}
 				}
 
 				.article-card-text {
 
-					font-size: 16px;
+					font-size: 1.6rem;
 					line-height: 2.4rem;
 
+				}		
+			
+				.see-more-link {
+					font-size: 1.4rem;
 				}
-
 			}
-
 
 		}
 
@@ -177,7 +180,7 @@ ul.article-cards-style-main {
 ul.article-cards-style-sub {
 
 	list-style: none;
-	margin: 20px 0px 0px 0px;
+	margin: 10px 0px 0px 0px;
 	padding: 0px;
 
 	//background-color: black;
@@ -192,7 +195,7 @@ ul.article-cards-style-sub {
 
 			border-bottom: 1px solid $card-border-color;
 
-			margin-top: 20px;
+			margin-top: 10px;
 
 			display: flex;
 			flex-direction: column;
@@ -204,15 +207,15 @@ ul.article-cards-style-sub {
 					margin: 0px;
 					padding: 0px;
 					a{
-
 						color: $title-text-color;
-						font: Bold 20px/28px Lato !important;
+						font-weight: 600;
+						font-family: Lato;
+						font-size: 1.6rem;
 					}
 				}
 				a {
 					text-decoration: none !important;
 					color: $title-text-color;
-					font: Bold 20px/28px Lato !important;
 				}
 	
 				a:visited { 
@@ -373,6 +376,10 @@ ul.article-cards-style-sub {
 
 							//box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 						}
+					}				
+				
+					.see-more-link {
+						font-size: 1.4rem;
 					}
 
 					.article-card-text {
@@ -394,7 +401,6 @@ ul.article-cards-style-sub {
 }
 
 .also-like{
-	border-top: 1px solid orange;
 	border-bottom: 1px solid orange;
 	li{
 		a{
@@ -418,12 +424,12 @@ ul.article-cards-style-sub {
 }
 
 .twitter-feed{
-	.twitter-articles{
-		max-height: 800px;
-		overflow-y: scroll;
-	}
+	// .twitter-articles{
+	// 	max-height: 800px;
+	// 	overflow-y: scroll;
+	// }
 	.twitter-link{
-		font-size: 16px;
+		font-size: 1.4rem;
 		text-align: left;
 		margin-top:10px;	
 	}
